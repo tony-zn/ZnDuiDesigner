@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DuiDesigner", "DuiDesigner\DuiDesigner.vcxproj", "{8C93ABBF-E614-4448-8475-24748FAD57C8}"
+	ProjectSection(ProjectDependencies) = postProject
+		{DB11FE46-99CE-4810-AD72-104FF3D25D96} = {DB11FE46-99CE-4810-AD72-104FF3D25D96}
+		{F3978061-36B3-48C0-89FC-59B0B85FD9BD} = {F3978061-36B3-48C0-89FC-59B0B85FD9BD}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignerControls", "DesignerControls\DesignerControls.vcxproj", "{F3978061-36B3-48C0-89FC-59B0B85FD9BD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignerAttribs", "DesignerAttribs\DesignerAttribs.vcxproj", "{DB11FE46-99CE-4810-AD72-104FF3D25D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C93ABBF-E614-4448-8475-24748FAD57C8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8C93ABBF-E614-4448-8475-24748FAD57C8}.Debug|Win32.Build.0 = Debug|Win32
+		{8C93ABBF-E614-4448-8475-24748FAD57C8}.Release|Win32.ActiveCfg = Release|Win32
+		{8C93ABBF-E614-4448-8475-24748FAD57C8}.Release|Win32.Build.0 = Release|Win32
+		{F3978061-36B3-48C0-89FC-59B0B85FD9BD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F3978061-36B3-48C0-89FC-59B0B85FD9BD}.Debug|Win32.Build.0 = Debug|Win32
+		{F3978061-36B3-48C0-89FC-59B0B85FD9BD}.Release|Win32.ActiveCfg = Release|Win32
+		{F3978061-36B3-48C0-89FC-59B0B85FD9BD}.Release|Win32.Build.0 = Release|Win32
+		{DB11FE46-99CE-4810-AD72-104FF3D25D96}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DB11FE46-99CE-4810-AD72-104FF3D25D96}.Debug|Win32.Build.0 = Debug|Win32
+		{DB11FE46-99CE-4810-AD72-104FF3D25D96}.Release|Win32.ActiveCfg = Release|Win32
+		{DB11FE46-99CE-4810-AD72-104FF3D25D96}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

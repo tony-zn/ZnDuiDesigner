@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window caption="0,0,0,40" size="1000,600">
+  <Font id="0" name="微软雅黑" size="12" bold="false" shared="true" default="true" />
+  <Font id="1" name="微软雅黑" size="10" bold="false" />
+  <Default name="VScrollBar" value="thumbnormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,32,16,48' &quot; thumbhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,32,32,48' &quot; thumbpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,32,48,48' &quot; thumbdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,32,64,48' &quot; bknormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,48,16,64' &quot; bkhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,48,32,64' &quot; bkpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,48,48,64' &quot; bkdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,48,64,64' &quot; button1normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,0,16,16' &quot; button1hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,0,32,16' &quot; button1pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,0,48,16' &quot; button1disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,0,64,16' &quot; button2normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,16,16,32' &quot; button2hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,16,32,32' &quot; button2pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,16,48,32' &quot; button2disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,16,64,32' &quot; " shared="true" />
+  <Default name="HScrollBar" value="thumbnormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,64,16,80' &quot; thumbhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,64,32,80' &quot; thumbpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,64,48,80' &quot; thumbdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,64,64,80' &quot; bknormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,48,16,64' &quot; bkhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,48,32,64' &quot; bkpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,48,48,64' &quot; bkdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,48,64,64' &quot; button1normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,96,16,112' &quot; button1hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,96,32,112' &quot; button1pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,96,48,112' &quot; button1disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,96,64,112' &quot; button2normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,80,16,96' &quot; button2hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,80,32,96' &quot; button2pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,80,48,96' &quot; button2disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,80,64,96' &quot; " shared="true" />
+  <VerticalLayout bkcolor="#FF2D2D30" bordersize="1" bordercolor="#FF424246">
+    <!--标题栏-->
+    <HorizontalLayout height="40" >
+      <Control width="20" />
+      <Control name="logo" width="32" height="32" padding="0,4" bkimage="DuiDesigner/Logo.png"/>
+      <Control width="20" />
+      <Label name="title" text="DuiLib 界面设计工具 - 设置" textcolor="#FF888888" align="left"/>
+      <Button name="closebtn" width="34" height="26" normalimage="file='DuiDesigner/WndBtn.png' source='68,0,102,26'" hotimage="file='DuiDesigner/WndBtn.png' source='68,26,102,52'" pushedimage="file='DuiDesigner/WndBtn.png' source='68,52,102,78'" />
+    </HorizontalLayout>
+    <Control height="1" bkcolor="#FF222222" padding="1,0,1" />
+    <Control height="1" bkcolor="#FF3F3F46" padding="1,0,1" />
+    <Control height="10" />
+    <VerticalLayout inset="10,0,10,0">
+      <HorizontalLayout height="40">
+        <Option name="type" userdata="0" text="基本设置" group="type" width="100" textcolor="#FFCCCCCC" hotimage="file='DuiDesigner/gray.png' fade='50'" selectedimage="DuiDesigner/gray.png" enabled="false"/>
+        <Option name="type" userdata="1" text="控件设置" group="type" width="100" textcolor="#FFCCCCCC" hotimage="file='DuiDesigner/gray.png' fade='50'" selectedimage="DuiDesigner/gray.png" selected="true"/>
+      </HorizontalLayout>
+      <TabLayout name="tab" bordersize="1" bordercolor="#FF3F3F46" inset="1,1,1,1" selectedid="1">
+        <VerticalLayout bkcolor="#FF252526" >
+          
+        </VerticalLayout>
+        <HorizontalLayout inset="10,10,0,10" childpadding="5" >
+          <TreeView name="controls.tree" inset="5,5,5,5" bkcolor="#FF252526" width="240" vscrollbar="true" userdata="itemhotimage=&quot;DuiDesigner/gray.png&quot; itemselectedimage=&quot;DuiDesigner/blue.png&quot; visiblecheckbtn=&quot;true&quot; visiblefolderbtn=&quot;true&quot; itemtextcolor=&quot;#FFCCCCCC&quot; itemhottextcolor=&quot;#FFCCCCCC&quot; selitemtextcolor=&quot;#FFCCCCCC&quot; " />
+          <VerticalLayout bkcolor="#FF252526" inset="5,5,5,5,">
+            <VerticalLayout name="control.attr.v" visible="false" >
+              <HorizontalLayout height="30" inset="5,5,5,5" bordersize="1" bordercolor="#FF3F3F46">
+                <Control />
+                <Label text="类名: " width="50" textcolor="#FFCCCCCC" align="right" valign="vcenter"/>
+                <RichEdit name="control.attr.alias.richedit" width="100" inset="2,2,2,2" bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF333337" textcolor="#FFCCCCCC" rich="false" multiline="false" autohscroll="true" wanttab="false" wantreturn="false" wantctrlreturn="false" />
+                <Label text="图片: " width="50" textcolor="#FFCCCCCC" align="right" valign="vcenter"/>
+                <RichEdit name="control.attr.image.richedit" width="100" inset="2,2,2,2" bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF333337" textcolor="#FFCCCCCC" rich="false" multiline="false" autohscroll="true" wanttab="false" wantreturn="false" wantctrlreturn="false" />
+                <Label text="父类:" textcolor="#FFCCCCCC" width="50" align="center" valign="vcenter"/>
+                <Combo width="150" name="control.attr.parent.combo" vscrollbar="true"  bkimage="file='DuiDesigner/drop.png' dest='136,9,142,12' " textpadding="2,2,22,2"  bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF333337" dropboxsize="150,500" itemfont="0" itemtextcolor="#FFCCCCCC" itemhottextcolor="#FFCCCCCC" itemselectedtextcolor="#FFCCCCCC" itemhotbkcolor="#FF3F3F46" itemselectedbkcolor="#FF007ACC" itemtextpadding="5" dropbox="bkcolor=&quot;#FF252526&quot; bordercolor=&quot;#FF3F3F46&quot;" />
+                <Label text="操作: " textcolor="#FFCCCCCC" width="50" align="right" valign="vcenter"/>
+                <HorizontalLayout width="150">
+                  <Button name="control.attr.list.add.btn" width="30" font="1" textcolor="#FFCCCCCC" text="添加" align="center" valign="vcenter" hotimage="DuiDesigner/gray.png" pushedimage="DuiDesigner/blue.png" pushedtextcolor="#FFCCCCCC" />
+                  <Button name="control.attr.list.delete.btn" width="30" font="1" textcolor="#FFCCCCCC" text="删除" align="center" valign="vcenter" hotimage="DuiDesigner/gray.png" pushedimage="DuiDesigner/blue.png" pushedtextcolor="#FFCCCCCC" />
+                  <Control width="20" />
+                  <Button name="control.attr.list.up.btn" width="30" font="1" textcolor="#FFCCCCCC" text="上移" align="center" valign="vcenter" hotimage="DuiDesigner/gray.png" pushedimage="DuiDesigner/blue.png" pushedtextcolor="#FFCCCCCC" />
+                  <Button name="control.attr.list.down.btn" width="30" font="1" textcolor="#FFCCCCCC" text="下移" align="center" valign="vcenter" hotimage="DuiDesigner/gray.png" pushedimage="DuiDesigner/blue.png" pushedtextcolor="#FFCCCCCC" />
+                  <Control />
+                </HorizontalLayout>
+                <Control />
+              </HorizontalLayout>
+              <List name="control.attr.list" vscrollbar="true" itemhotimage="DuiDesigner/gray.png" itemselectedimage="DuiDesigner/blue.png" itemlinecolor="#FF3F3F46" sepheight="2" >
+                <ListHeader height="30" childpadding="1" bordercolor="FF3F3F46" bottombordersize="2">
+                  <Label textcolor="#FFCCCCCC" width="130" text="属性" align="center" valign="vcenter" />
+                  <Label textcolor="#FFCCCCCC" width="100" text="别名" align="center" valign="vcenter" />
+                  <Label textcolor="#FFCCCCCC" width="100" text="默认值" align="center" valign="vcenter" />
+                  <Label textcolor="#FFCCCCCC" width="140" text="类型" align="center" valign="vcenter" />
+                  <Label textcolor="#FFCCCCCC" text="预览" align="center" valign="vcenter" />
+                </ListHeader>
+              </List>
+            </VerticalLayout>
+          </VerticalLayout>
+        </HorizontalLayout>
+      </TabLayout>
+    </VerticalLayout>
+    <Control height="10" />
+    <!--以下不可见控件用来存放容器Item的样式-->
+    <Control name="controls.tree.nodestyle" visible="false" userdata="name=&quot;controls.tree.node&quot; height=&quot;20&quot; padding=&quot;0,0,5,0&quot; " />
+    <Control name="controls.tree.nodestyle.horizattr" visible="false" userdata="name=&quot;controls.tree.node.hor&quot; " />
+    <Control name="controls.tree.nodestyle.dotlineattr" visible="false" userdata="name=&quot;controls.tree.node.dotline&quot; " />
+    <Control name="controls.tree.nodestyle.folderattr" visible="false" userdata="name=&quot;controls.tree.node.folder&quot; width=&quot;20&quot; height=&quot;20&quot; selectedimage=&quot;file='DuiDesigner/narrow.png' dest='7,5,13,16'&quot; normalimage=&quot;file='DuiDesigner/expand.png' dest='5,7,13,14'&quot; disabledimage=&quot;DuiDesigner/null.png&quot; "/>
+    <Control name="controls.tree.nodestyle.checkboxattr" visible="false" userdata="name=&quot;controls.tree.node.checkbox&quot; width=&quot;20&quot; height=&quot;20&quot; selectedimage=&quot;file='DuiDesigner/selected.png' dest='5,5,15,15'&quot; normalimage=&quot;file='DuiDesigner/unselected.png' dest='5,5,15,15'&quot; " />
+    <Control name="controls.tree.nodestyle.itemattr" visible="false" userdata="name=&quot;controls.tree.node.item&quot; align=&quot;left&quot; valign=&quot;vcenter&quot;" />
+  </VerticalLayout>
+</Window>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window caption="0,0,0,40" size="800,600">
+  <ListContainerElement height="30" minheight="30">
+    <HorizontalLayout>
+      <HorizontalLayout width="130" inset="5,5,5,5" height="30">
+        <RichEdit name="control.attr.list.item.name.richedit" inset="2,2,2,2" bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF333337" textcolor="#FFCCCCCC" rich="false" multiline="false" autohscroll="true" wanttab="false" wantreturn="false" wantctrlreturn="false" />
+      </HorizontalLayout>
+      <HorizontalLayout width="100" inset="5,5,5,5" height="30">
+        <RichEdit name="control.attr.list.item.alias.richedit" inset="2,2,2,2" bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF333337" textcolor="#FFCCCCCC" rich="false" multiline="false" autohscroll="true" wanttab="false" wantreturn="false" wantctrlreturn="false" />
+      </HorizontalLayout>
+      <HorizontalLayout width="100" inset="5,5,5,5" height="30">
+        <RichEdit name="control.attr.list.item.defaultvalue.richedit" inset="2,2,2,2" bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF333337" textcolor="#FFCCCCCC" rich="false" multiline="false" autohscroll="true" wanttab="false" wantreturn="false" wantctrlreturn="false" />
+      </HorizontalLayout>
+      <HorizontalLayout width="140" inset="5,5,5,5" height="30">
+        <Combo name="control.attr.list.item.type.combo" bkimage="file='DuiDesigner/drop.png' dest='116,9,122,12' " vscrollbar="true" textpadding="2,2,22,2"  bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF333337" dropboxsize="130,500" itemfont="0" itemtextcolor="#FFCCCCCC" itemhottextcolor="#FFCCCCCC" itemselectedtextcolor="#FFCCCCCC" itemhotbkcolor="#FF3F3F46" itemselectedbkcolor="#FF007ACC" itemtextpadding="5"  dropbox="bkcolor=&quot;#FF252526&quot; bordercolor=&quot;#FF3F3F46&quot; " />
+      </HorizontalLayout>
+      <HorizontalLayout name="control.attr.list.item.preview.h" inset="0,5,5,0" > 
+
+      </HorizontalLayout>
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

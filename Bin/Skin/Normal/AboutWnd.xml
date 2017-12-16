@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window caption="0,0,0,200" size="500,200">
+  <Font id="0" name="微软雅黑" size="12" bold="false" default="true" />
+  <Font id="1" name="微软雅黑" size="20" bold="true" />
+  <HorizontalLayout bkcolor="#FF2D2D30" bordersize="1" bordercolor="#FF424246">
+    <HorizontalLayout>
+      <Control width="40"/>
+      <VerticalLayout width="183">
+        <Control />
+        <Control width="183" height="113" bkimage="DuiDesigner/zn.png"/>
+        <Control />
+      </VerticalLayout>
+      <Control width="20"/>
+      <VerticalLayout >
+        <Control />
+        <Label font="1" height="20" text="DuiLib 界面设计工具" textcolor="#FF007ACC" align="left" />
+        <Control height="5"/>
+        <Label font="0" height="15" text="CopyRight © Tony" textcolor="#FF888888" align="left" />
+        <Control height="5"/>
+        <Label font="0" height="15" text="E-Mail: heiyun1270@qq.com" textcolor="#FF888888" align="left" />
+        <Control />
+      </VerticalLayout>
+       <Button name="closebtn" width="34" height="26" normalimage="file='DuiDesigner/WndBtn.png' source='68,0,102,26'" hotimage="file='DuiDesigner/WndBtn.png' source='68,26,102,52'" pushedimage="file='DuiDesigner/WndBtn.png' source='68,52,102,78'" />
+    </HorizontalLayout>
+  </HorizontalLayout>
+</Window>

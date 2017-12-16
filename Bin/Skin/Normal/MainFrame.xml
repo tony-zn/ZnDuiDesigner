@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window caption="0,0,0,40" mininfo="500,200" sizebox="5,5,5,5" size="800,600">
+  <Font id="0" name="微软雅黑" size="12" bold="false" default="true" />
+  <Default name="VScrollBar" value="thumbnormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,32,16,48' &quot; thumbhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,32,32,48' &quot; thumbpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,32,48,48' &quot; thumbdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,32,64,48' &quot; bknormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,48,16,64' &quot; bkhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,48,32,64' &quot; bkpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,48,48,64' &quot; bkdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,48,64,64' &quot; button1normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,0,16,16' &quot; button1hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,0,32,16' &quot; button1pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,0,48,16' &quot; button1disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,0,64,16' &quot; button2normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,16,16,32' &quot; button2hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,16,32,32' &quot; button2pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,16,48,32' &quot; button2disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,16,64,32' &quot; " shared="true" />
+  <Default name="HScrollBar" value="thumbnormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,64,16,80' &quot; thumbhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,64,32,80' &quot; thumbpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,64,48,80' &quot; thumbdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,64,64,80' &quot; bknormalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,48,16,64' &quot; bkhotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,48,32,64' &quot; bkpushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,48,48,64' &quot; bkdisabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,48,64,64' &quot; button1normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,96,16,112' &quot; button1hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,96,32,112' &quot; button1pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,96,48,112' &quot; button1disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,96,64,112' &quot; button2normalimage=&quot;file='DuiDesigner/scrollbar.png' source='0,80,16,96' &quot; button2hotimage=&quot;file='DuiDesigner/scrollbar.png' source='16,80,32,96' &quot; button2pushedimage=&quot;file='DuiDesigner/scrollbar.png' source='32,80,48,96' &quot; button2disabledimage=&quot;file='DuiDesigner/scrollbar.png' source='48,80,64,96' &quot; " shared="true" />
+  <VerticalLayout name="root" bkcolor="#FF2D2D30" bordersize="1" bordercolor="#FF424246">
+    <!--标题栏-->
+    <HorizontalLayout height="40" >
+      <Control width="20" />
+      <Control name="logo" width="32" height="32" padding="0,4" bkimage="DuiDesigner/Logo.png"/>
+      <Control width="20" />
+      <Label name="title" text="DuiLib 界面设计工具 1.0" textcolor="#FF888888" align="left"/>
+      <Button name="menubtn" width="34" height="26" normalimage="file='DuiDesigner/WndBtn.png' source='136,0,170,26'" hotimage="file='DuiDesigner/WndBtn.png' source='136,26,170,52'" pushedimage="file='DuiDesigner/WndBtn.png' source='136,52,170,78'" />
+      <Button name="minbtn" width="34" height="26" normalimage="file='DuiDesigner/WndBtn.png' source='0,0,34,26'" hotimage="file='DuiDesigner/WndBtn.png' source='0,26,34,52'" pushedimage="file='DuiDesigner/WndBtn.png' source='0,52,34,78'" />
+      <Button name="restorebtn" width="34" height="26" normalimage="file='DuiDesigner/WndBtn.png' source='102,0,136,26'" hotimage="file='DuiDesigner/WndBtn.png' source='102,26,136,52'" pushedimage="file='DuiDesigner/WndBtn.png' source='102,52,136,78'" />
+      <Button name="maxbtn" width="34" height="26" normalimage="file='DuiDesigner/WndBtn.png' source='34,0,68,26'" hotimage="file='DuiDesigner/WndBtn.png' source='34,26,68,52'" pushedimage="file='DuiDesigner/WndBtn.png' source='34,52,68,78'" />
+      <Button name="closebtn" width="34" height="26" normalimage="file='DuiDesigner/WndBtn.png' source='68,0,102,26'" hotimage="file='DuiDesigner/WndBtn.png' source='68,26,102,52'" pushedimage="file='DuiDesigner/WndBtn.png' source='68,52,102,78'" />
+    </HorizontalLayout>
+    <Control height="1" bkcolor="#FF222222" padding="1,0,1" />
+    <Control height="1" bkcolor="#FF3F3F46" padding="1,0,1" />
+    <!--工具栏-->
+    <HorizontalLayout height="40" inset="10,8,10,9" childpadding="5">
+      <Button name="toolbar.undo" tooltip="撤销" width="20" normalimage="file='DuiDesigner/toolbar.png' source='0,0,20,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='0,0,20,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='0,0,20,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='0,0,20,23'" />
+      <Button name="toolbar.redo" tooltip="重做" width="20" normalimage="file='DuiDesigner/toolbar.png' source='20,0,40,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='20,0,40,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='20,0,40,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='20,0,40,23'" />
+      <Control width="20" bkimage="DuiDesigner/line.png"/>
+      <Button name="toolbar.new" tooltip="新建 ( Ctrl + N )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='40,0,60,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='40,0,60,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='40,0,60,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='40,0,60,23'" />
+      <Button name="toolbar.open" tooltip="打开 ( Ctrl + O )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='60,0,80,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='60,0,80,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='60,0,80,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='60,0,80,23'" />
+      <Button name="toolbar.save" tooltip="保存 ( Ctrl + S )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='80,0,100,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='80,0,100,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='80,0,100,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='80,0,100,23'" />
+      <Button name="toolbar.saveas" tooltip="另存为" width="20" normalimage="file='DuiDesigner/toolbar.png' source='260,0,280,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='260,0,280,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='260,0,280,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='260,0,280,23'" />
+      <Button name="toolbar.saveall" tooltip="保存所有" width="20" normalimage="file='DuiDesigner/toolbar.png' source='100,0,120,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='100,0,120,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='100,0,120,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='100,0,120,23'" />
+      <Control width="20" bkimage="DuiDesigner/line.png"/>
+      <Button name="toolbar.start" tooltip="启动 ( F5 )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='120,0,140,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='120,0,140,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='120,0,140,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='120,0,140,23'" />
+      <Control width="20" bkimage="DuiDesigner/line.png"/>
+      <Button name="toolbar.cut" tooltip="剪切 ( Ctrl + X )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='140,0,160,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='140,0,160,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='140,0,160,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='140,0,160,23'" />
+      <Button name="toolbar.copy" tooltip="复制 ( Ctrl + C )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='160,0,180,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='160,0,180,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='160,0,180,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='160,0,180,23'" />
+      <Button name="toolbar.paste" tooltip="粘贴 ( Ctrl + V )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='180,0,200,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='180,0,200,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='180,0,200,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='180,0,200,23'" />
+      <Button name="toolbar.del" tooltip="删除 ( Delete )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='280,0,300,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='280,0,300,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='280,0,300,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='280,0,300,23'" />
+      <Control width="20" bkimage="DuiDesigner/line.png"/>
+      <Button name="toolbar.defaultdata" tooltip="设置默认数据 ( Ctrl + W )" width="20" normalimage="file='DuiDesigner/toolbar.png' source='220,0,240,23'" hotimage="file='DuiDesigner/toolbar_hot.png' source='220,0,240,23'" pushedimage="file='DuiDesigner/toolbar_pushed.png' source='220,0,240,23'" disabledimage="file='DuiDesigner/toolbar_disabled.png' source='220,0,240,23'" />
+      <Control width="20" bkimage="DuiDesigner/line.png"/>
+    </HorizontalLayout>
+    <!--主体-->
+    <HorizontalLayout>
+      <Control width="10" />
+      <!--控件-->
+      <VerticalLayout width ="200" >
+        <TabLayout name="controls.tab" bordersize="1,1,1,0" bordercolor="#FF3F3F46" inset="1,1,1,1">
+          <List name="controls.list" vscrollbar="true" itemhotimage="DuiDesigner/gray.png" itemselectedimage="DuiDesigner/blue.png" bkcolor="#FF252526" >
+            <ListHeader height="20">
+              <Label height="20" text="工具箱" textpadding="5" textcolor="#FFCCCCCC" bkcolor="#FF3F3F46"/>
+            </ListHeader>
+          </List>
+          <VerticalLayout >
+            <Label height="20" text="控件布局" textpadding="5" textcolor="#FFCCCCCC" bkcolor="#FF3F3F46"/>
+            <TreeView name="controls.layout.tree" inset="0,2,0,2" bkcolor="#FF252526" vscrollbar="true" hscrollbar="true" childpadding="5" keyboard="false" userdata="itemhotimage=&quot;DuiDesigner/gray.png&quot; itemselectedimage=&quot;DuiDesigner/blue.png&quot; visiblecheckbtn=&quot;false&quot; visiblefolderbtn=&quot;true&quot; itemtextcolor=&quot;#FFCCCCCC&quot; itemhottextcolor=&quot;#FFCCCCCC&quot; selitemtextcolor=&quot;#FFCCCCCC&quot; " />
+            <Control name="controls.layout.tree.nodestyle.folderattr" visible="false" userdata="name=&quot;controls.layout.tree.folder&quot; width=&quot;20&quot; height=&quot;20&quot; selectedimage=&quot;file='DuiDesigner/narrow.png' dest='7,5,13,16'&quot; normalimage=&quot;file='DuiDesigner/expand.png' dest='5,7,13,14'&quot; disabledimage=&quot;DuiDesigner/null.png&quot; "/>
+          </VerticalLayout>
+        </TabLayout>
+        <HorizontalLayout height="20" padding="0,-1,1,0">
+          <Option width="50" text="工具箱" name="controls.type" userdata="0" group="controls.type" textcolor="#FFCCCCCC" selectedtextcolor="#FF007ACC" normalimage="file='DuiDesigner/type_unselected.png' corner='1,1,1,1'" selectedimage="file='DuiDesigner/type_selected.png' corner='1,1,1,1'" selected="true"/>
+          <Option width="50" text="布局" name="controls.type" userdata="1" group="controls.type" textcolor="#FFCCCCCC" selectedtextcolor="#FF007ACC" normalimage="file='DuiDesigner/type_unselected.png' corner='1,1,1,1'" selectedimage="file='DuiDesigner/type_selected.png' corner='1,1,1,1'" />
+          <Control topbordersize="1" bordercolor="#FF3F3F46"/>
+        </HorizontalLayout>
+      </VerticalLayout>
+      <Control width="10" />
+      <!--画布-->
+      <VerticalLayout >
+        <HorizontalLayout name="wnds.title.h" height="20" userdata="name=&quot;wnds.title.h.item.option&quot; group=&quot;wnds.title.h.item&quot; width=&quot;80&quot; height=&quot;20&quot; align=&quot;center&quot; valign=&quot;vcenter&quot; textcolor=&quot;#FFCCCCCC&quot; hotimage=&quot;DuiDesigner/gray.png&quot; selectedimage=&quot;DuiDesigner/blue.png&quot; " />
+        <Control name="wnds.title.border" height="2" bkcolor="#FF007ACC" visible="false" />
+        <VerticalLayout bordersize="1" bordercolor="#FF3F3F46" inset="1,1,1,1">
+          <TabLayout name="wnds.content.tab" bkcolor="#FF252526" inset="14,14" userdata="inset=&quot;2,2&quot; vscrollbar=&quot;true&quot; hscrollbar=&quot;true&quot;" />
+        </VerticalLayout>
+      </VerticalLayout>
+      <Control width="10" />
+      <!--属性-->
+      <VerticalLayout width ="320" bordersize="1" bordercolor="#FF3F3F46" inset="1,1,1,1">
+        <Label name="attribs.title" height="20" userdata="属性" textpadding="5" textcolor="#FFCCCCCC" bkcolor="#FF3F3F46"/>
+        <TreeView name="attribs.tree" inset="0,2,0,2" bkcolor="#FF252526" vscrollbar="true" childpadding="5" userdata="itemhotimage=&quot;DuiDesigner/gray.png&quot; itemselectedimage=&quot;DuiDesigner/blue.png&quot; visiblecheckbtn=&quot;false&quot; visiblefolderbtn=&quot;true&quot; itemtextcolor=&quot;#FFCCCCCC&quot; itemhottextcolor=&quot;#FFCCCCCC&quot; selitemtextcolor=&quot;#FFCCCCCC&quot; " />
+        <Control name="attribs.tree.nodestyle.folderattr" visible="false" userdata="name=&quot;controls.tree.node.folder&quot; width=&quot;20&quot; height=&quot;20&quot; selectedimage=&quot;file='DuiDesigner/narrow.png' dest='7,5,13,16'&quot; normalimage=&quot;file='DuiDesigner/expand.png' dest='5,7,13,14'&quot; disabledimage=&quot;DuiDesigner/null.png&quot; "/>
+      </VerticalLayout>
+      <Control width="10" />
+    </HorizontalLayout>
+    <Control height="10" />
+    <!--菜单-->
+    <VerticalLayout name="menu.v" visible="false" float="true" width="80" height="90" bordersize="1" bordercolor="#FF3F3F46" bkcolor="#FF2D2D30">
+      <HorizontalLayout inset="2,2,2,2" height="30">
+        <Button name="settingsbtn" hotimage="DuiDesigner/gray.png" pushedimage="DuiDesigner/blue.png" textcolor="#FFCCCCCC" text="设置..." textpadding="10" align="left" valign="vcenter" />
+      </HorizontalLayout>
+      <HorizontalLayout inset="2,2,2,2" height="30">
+        <Button name="aboutbtn" hotimage="DuiDesigner/gray.png" pushedimage="DuiDesigner/blue.png" textcolor="#FFCCCCCC" text="关于..." textpadding="10" align="left" valign="vcenter" />
+      </HorizontalLayout>
+      <HorizontalLayout inset="2,2,2,2" height="30">
+        <Button name="closebtn" hotimage="DuiDesigner/gray.png" pushedimage="DuiDesigner/blue.png" textcolor="#FFCCCCCC" text="退出" textpadding="10" align="left" valign="vcenter" />  
+      </HorizontalLayout>
+    </VerticalLayout>
+    <Control name="pointedstyle" visible="false" userdata="bordersize=&quot;2&quot; bordercolor=&quot;#FF002C4A&quot; float=&quot;true&quot; mouse=&quot;true&quot;" />
+    <Control name="selectedstyle" visible="false" userdata="bordersize=&quot;2&quot; bordercolor=&quot;#FF007ACC&quot; float=&quot;true&quot; mouse=&quot;true&quot;" />
+  </VerticalLayout>
+</Window>

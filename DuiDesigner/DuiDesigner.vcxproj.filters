@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{cb01d83a-3400-4873-8ee2-3d3c9f33fa7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="布局文件">
+      <UniqueIdentifier>{b5e13ca2-03ab-48e1-9260-d8379872afd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="布局文件\默认">
+      <UniqueIdentifier>{b0a73d46-9a08-4e19-bdec-749bd84dcdec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件\窗口">
+      <UniqueIdentifier>{a67652b3-40a5-4e48-9bcb-604a6463cbb2}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="源文件\窗口">
+      <UniqueIdentifier>{0de6cae5-db83-4118-a3fc-d64d4abad7f6}</UniqueIdentifier>
+      <Extensions>cpp</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PluginManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\MainFrame.cpp">
+      <Filter>源文件\窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\AboutWnd.cpp">
+      <Filter>源文件\窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\SettingsWnd.cpp">
+      <Filter>源文件\窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Clipboard.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\PreviewWnd.cpp">
+      <Filter>源文件\窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\DefaultAttrWnd.cpp">
+      <Filter>源文件\窗口</Filter>
+    </ClCompile>
+    <ClCompile Include="Memorandum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PluginManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\MainFrame.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\AboutWnd.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\SettingsWnd.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlPluginInterface.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Clipboard.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\PreviewWnd.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\DefaultAttrWnd.h">
+      <Filter>头文件\窗口</Filter>
+    </ClInclude>
+    <ClInclude Include="Memorandum.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DuiDesigner.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Logo.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\Bin\Skin\Normal\AboutWnd.xml">
+      <Filter>布局文件\默认</Filter>
+    </None>
+    <None Include="..\Bin\Skin\Normal\SettingsWnd.xml">
+      <Filter>布局文件\默认</Filter>
+    </None>
+    <None Include="..\Bin\DuiDesigner.xml">
+      <Filter>头文件</Filter>
+    </None>
+    <None Include="..\Bin\Skin\Normal\SettingsAttrListItem.xml">
+      <Filter>布局文件\默认</Filter>
+    </None>
+    <None Include="..\Bin\Skin\Normal\ControlsListItem.xml">
+      <Filter>布局文件\默认</Filter>
+    </None>
+    <None Include="..\Bin\Skin\Normal\WndsTitleItem.xml">
+      <Filter>布局文件\默认</Filter>
+    </None>
+    <None Include="..\Bin\Skin\Normal\DefaultAttrWnd.xml">
+      <Filter>布局文件\默认</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\Bin\Skin\Normal\MainFrame.xml">
+      <Filter>布局文件\默认</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

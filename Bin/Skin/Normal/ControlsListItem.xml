@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window >
+  <ListContainerElement height="30" >
+    <HorizontalLayout inset="0,5,0,5">
+      <Control width="5" />
+      <Control name="controls.list.item.image" width="20" height="20" />
+      <Control width="5" />
+      <Label name="controls.list.item.name" align="left" valign="vcenter" textcolor="#FFCCCCCC" />
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<root>
+	<basic>
+		<skin path="Normal"/>
+	</basic>
+	<controls>
+		<control name="ActiveX" classname="ActiveXUI" image="" parent="Control" enable="false">
+			<attrib name="clsid" alias="CLSID" type="Edit" default=""/>
+			<attrib name="modulename" alias="模块" type="Edit" default=""/>
+			<attrib name="delaycreate" alias="延迟创建" type="CheckBox" default="false"/>
+		</control>
+		<control name="AutoWidthHLayout" classname="" image="" parent="HorizontalLayout" enable="false"/>
+		<control name="AutoWidthOption" classname="" image="" parent="Option" enable="false"/>
+		<control name="Button" classname="ButtonUI" image="file='Controls/button.png' dest='3,3,17,17'" parent="Label" enable="true">
+			<attrib name="align" alias="水平对齐" type="Edit" default="center"/>
+			<attrib name="valign" alias="垂直对齐" type="Edit" default="vcenter"/>
+			<attrib name="normalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="hotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="pushedimage" alias="按下图片" type="Image" default=""/>
+			<attrib name="disabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="focusedimage" alias="获得焦点图片" type="Image" default=""/>
+			<attrib name="hottextcolor" alias="悬浮文字颜色" type="Color" default="#00000000"/>
+			<attrib name="pushedtextcolor" alias="按下文字颜色" type="Color" default="#00000000"/>
+			<attrib name="focusedtextcolor" alias="焦点文字颜色" type="Color" default="#00000000"/>
+		</control>
+		<control name="Canvas" classname="Canvas" image="" parent="VerticalLayout" enable="false"/>
+		<control name="CheckBox" classname="CheckBoxUI" image="file='Controls/Option.png' dest='3,3,17,17'" parent="Option" enable="true">
+			<attrib name="selectedtextcolor" alias="选中文本颜色" type="Color" default="#FF000000"/>
+		</control>
+		<control name="ChildLayout" classname="ChildLayoutUI" image="file='Controls/ChildLayout.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="inset" alias="内边距" type="Rect" default=""/>
+			<attrib name="mousechild" alias="子项鼠标禁用" type="CheckBox" default=""/>
+			<attrib name="childpadding" alias="子项间距" type="Edit" default=""/>
+			<attrib name="xmlfile" alias="文件" type="Edit" default=""/>
+		</control>
+		<control name="Combo" classname="ComboUI" image="file='Controls/Combo.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="textpadding" alias="文字外边距" type="Rect" default="0,0,0,0"/>
+			<attrib name="normalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="hotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="pushedimage" alias="按下图片" type="Image" default=""/>
+			<attrib name="focusedimage" alias="焦点图片" type="Image" default=""/>
+			<attrib name="disabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="dropboxsize" alias="弹出框大小" type="Size" default="0,150"/>
+			<attrib name="multiexpanding" alias="允许多选" type="CheckBox" default="false"/>
+			<attrib name="" alias="子项设置" type="Line" default=""/>
+			<attrib name="itemfont" alias="字体" type="Font" default="0"/>
+			<attrib name="itemalign" alias="对齐" type="Edit" default=""/>
+			<attrib name="itemendellipsis" alias="endellipsis" type="CheckBox" default="false"/>
+			<attrib name="itemaltbk" alias="隔行交替" type="CheckBox" default="false"/>
+			<attrib name="itemlinecolor" alias="分隔线颜色" type="Color" default="#00000000"/>
+			<attrib name="itemshowhtml" alias="使用富文本" type="CheckBox" default="false"/>
+			<attrib name="itemtextpadding" alias="文字外边距" type="Rect" default="0,0,0,0"/>
+			<attrib name="itemtextcolor" alias="文字颜色" type="Color" default="#FF000000"/>
+			<attrib name="itembkcolor" alias="背景颜色" type="Color" default="#00000000"/>
+			<attrib name="itembkimage" alias="背景图片" type="Image" default=""/>
+			<attrib name="itemdisabledbkcolor" alias="禁用颜色" type="Color" default="#FFFFFFFF"/>
+			<attrib name="itemdisabledimage" alias="禁用图片" type="Edit" default=""/>
+			<attrib name="itemdisabledtextcolor" alias="禁用文字颜色" type="Color" default="#FFCCCCCC"/>
+			<attrib name="itemhotbkcolor" alias="悬浮颜色" type="Color" default="#FFE9F5FF"/>
+			<attrib name="itemhotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="itemhottextcolor" alias="悬浮文字颜色" type="Color" default="#FF000000"/>
+			<attrib name="itemselectedbkcolor" alias="选中颜色" type="Color" default="#FFC1E3FF"/>
+			<attrib name="itemselectedimage" alias="选中图片" type="Image" default=""/>
+			<attrib name="itemselectedtextcolor" alias="选中文字颜色" type="Color" default="#FF000000"/>
+		</control>
+		<control name="Container" classname="ContainerUI" image="file='Controls/Container.png' dest='3,3,17,17'" parent="Control" enable="true">
+			<attrib name="inset" alias="内边距" type="Rect" default="0,0,0,0"/>
+			<attrib name="mousechild" alias="子项鼠标消息" type="CheckBox" default="true"/>
+			<attrib name="vscrollbar" alias="垂直滚动条" type="CheckBox" default="false"/>
+			<attrib name="hscrollbar" alias="水平滚动条" type="CheckBox" default="false"/>
+			<attrib name="childpadding" alias="子控件间距" type="Edit" default="0"/>
+		</control>
+		<control name="Control" classname="ControlUI" image="file='Controls/Control.png' dest='3,3,17,17'" parent="" enable="true">
+			<attrib name="name" alias="名称" type="Edit" default=""/>
+			<attrib name="pos" alias="位置" type="Pos" default="0,0,0,0"/>
+			<attrib name="float" alias="绝对定位" type="CheckBox" default="false"/>
+			<attrib name="padding" alias="外边距" type="Rect" default="0,0,0,0"/>
+			<attrib name="bkcolor" alias="背景颜色" type="Color" default="#00000000"/>
+			<attrib name="bkcolor2" alias="背景渐变1" type="Color" default="#00000000"/>
+			<attrib name="bkcolor3" alias="背景渐变2" type="Color" default="#00000000"/>
+			<attrib name="bordercolor" alias="边框颜色" type="Color" default="#00000000"/>
+			<attrib name="focusbordercolor" alias="激活边框颜色" type="Color" default="#00000000"/>
+			<attrib name="colorhsl" alias="ColorHSL" type="CheckBox" default="false"/>
+			<attrib name="bordersize" alias="边框大小" type="Edit" default="0"/>
+			<attrib name="leftbordersize" alias="左边框大小" type="Edit" default="0"/>
+			<attrib name="rightbordersize" alias="右边框大小" type="Edit" default="0"/>
+			<attrib name="topbordersize" alias="上边框大小" type="Edit" default="0"/>
+			<attrib name="bottombordersize" alias="下边框大小" type="Edit" default="0"/>
+			<attrib name="borderstyle" alias="边框样式" type="Edit" default="0"/>
+			<attrib name="borderround" alias="边框圆角半径" type="Size" default="0,0"/>
+			<attrib name="bkimage" alias="背景图" type="Image" default=""/>
+			<attrib name="minwidth" alias="最小宽" type="Edit" default="0"/>
+			<attrib name="minheight" alias="最小高" type="Edit" default="0"/>
+			<attrib name="maxwidth" alias="最大宽" type="Edit" default="9999"/>
+			<attrib name="maxheight" alias="最大高" type="Edit" default="9999"/>
+			<attrib name="text" alias="文本" type="Edit" default=""/>
+			<attrib name="tooltip" alias="提示" type="Edit" default=""/>
+			<attrib name="userdata" alias="用户数据" type="Edit" default=""/>
+			<attrib name="enabled" alias="允许" type="CheckBox" default="true"/>
+			<attrib name="mouse" alias="鼠标消息" type="CheckBox" default="true"/>
+			<attrib name="visible" alias="可见" type="CheckBox" default="true"/>
+			<attrib name="shortcut" alias="快捷键" type="Edit" default=""/>
+			<attrib name="menu" alias="菜单" type="CheckBox" default="false"/>
+			<attrib name="keyboard" alias="键盘消息" type="CheckBox" default="true"/>
+		</control>
+		<control name="DateTime" classname="DateTimeUI" image="file='Controls/DateTime.png' dest='3,3,17,17'" parent="Label" enable="true"/>
+		<control name="Edit" classname="EditUI" image="file='Controls/Edit.png' dest='3,3,17,17'" parent="Label" enable="true">
+			<attrib name="bkcolor" alias="背景颜色" type="Color" default="#FFFFFFFF"/>
+			<attrib name="textpadding" alias="文字外边距" type="Rect" default="4,3,4,3"/>
+			<attrib name="align" alias="水平对齐" type="" default=""/>
+			<attrib name="readonly" alias="只读" type="CheckBox" default="false"/>
+			<attrib name="numberonly" alias="仅数字" type="CheckBox" default="false"/>
+			<attrib name="password" alias="密码" type="CheckBox" default="false"/>
+			<attrib name="maxchar" alias="允许文字个数" type="Edit" default="255"/>
+			<attrib name="normalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="hotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="focusedimage" alias="焦点图片" type="Image" default=""/>
+			<attrib name="disabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="nativebkcolor" alias="系统背景" type="Color" default="#FFFFFFFF"/>
+		</control>
+		<control name="HorizontalLayout" classname="HorizontalLayoutUI" image="file='Controls/HorizontalLayout.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="sepwidth" alias="分隔符宽" type="Edit" default="0"/>
+			<attrib name="sepimm" alias="使用分隔符" type="CheckBox" default="false"/>
+		</control>
+		<control name="Label" classname="LabelUI" image="file='Controls/Label.png' dest='3,3,17,17'" parent="Control" enable="true">
+			<attrib name="align" alias="水平对齐" type="Edit" default=""/>
+			<attrib name="valign" alias="垂直对齐" type="Edit" default="vcenter"/>
+			<attrib name="endellipsis" alias="endellipsis" type="CheckBox" default="false"/>
+			<attrib name="font" alias="字体" type="Font" default="-1"/>
+			<attrib name="textcolor" alias="字体颜色" type="Color" default="#FF000000"/>
+			<attrib name="textcolor1" alias="字体渐变色" type="Color" default="#FFFFFFFF"/>
+			<attrib name="disabledtextcolor" alias="禁用字体颜色" type="Color" default="#FFA7A6AA"/>
+			<attrib name="textpadding" alias="文字外边距" type="Rect" default="0,0,0,0"/>
+			<attrib name="showhtml" alias="使用富文本" type="CheckBox" default="false"/>
+			<attrib name="enabledeffect" alias="使用文字特效" type="CheckBox" default="false"/>
+			<attrib name="enabledluminous" alias="文字发光" type="CheckBox" default="false"/>
+			<attrib name="luminousfuzzy" alias="发光模糊度" type="Edit" default="3.00"/>
+			<attrib name="enabledstroke" alias="使用文字描边" type="Font" default="false"/>
+			<attrib name="strokecolor" alias="描边颜色" type="Color" default="#00000000"/>
+			<attrib name="enabledshadow" alias="使用阴影效果" type="CheckBox" default="false"/>
+			<attrib name="gradientangle" alias="阴影角度" type="Edit" default="0"/>
+			<attrib name="gradientlength" alias="阴影距离" type="Edit" default="0"/>
+			<attrib name="textshadowcolora" alias="阴影渐变色1" type="Color" default="#FF000000"/>
+			<attrib name="textshadowcolorb" alias="阴影渐变色2" type="Color" default="#FFFFFFFF"/>
+		</control>
+		<control name="List" classname="ListUI" image="file='Controls/List.png' dest='3,3,17,17'" parent="VerticalLayout" enable="true">
+			<attrib name="header" alias="显示表头" type="CheckBox" default="true"/>
+			<attrib name="headerbkimage" alias="表头背景图片" type="Image" default=""/>
+			<attrib name="scrollselect" alias="随滚动改变" type="CheckBox" default="false"/>
+			<attrib name="multiexpanding" alias="允许多选" type="CheckBox" default="false"/>
+			<attrib name="" alias="子项设置" type="Line" default=""/>
+			<attrib name="itemfont" alias="字体" type="Font" default="0"/>
+			<attrib name="itemalign" alias="对齐" type="Edit" default=""/>
+			<attrib name="itemendellipsis" alias="endellipsis" type="CheckBox" default="false"/>
+			<attrib name="itemtextpadding" alias="文字外边距" type="Rect" default="0,0,0,0"/>
+			<attrib name="itemtextcolor" alias="文字颜色" type="Color" default="#FF000000"/>
+			<attrib name="itembkcolor" alias="背景颜色" type="Color" default="#00000000"/>
+			<attrib name="itembkimage" alias="背景图片" type="Image" default=""/>
+			<attrib name="itemaltbk" alias="隔行交替" type="CheckBox" default="false"/>
+			<attrib name="itemselectedtextcolor" alias="选中文字颜色" type="Color" default="#FF000000"/>
+			<attrib name="itemselectedbkcolor" alias="选中背景颜色" type="Color" default="#FFC1E3FF"/>
+			<attrib name="itemselectedimage" alias="选中背景图片" type="Image" default=""/>
+			<attrib name="itemhottextcolor" alias="悬浮文字颜色" type="Color" default="#FF000000"/>
+			<attrib name="itemhotbkcolor" alias="悬浮背景颜色" type="Color" default="#FFE9F5FF"/>
+			<attrib name="itemhotimage" alias="悬浮背景图片" type="Image" default=""/>
+			<attrib name="itemdisabledtextcolor" alias="禁用文字颜色" type="Color" default="#FFCCCCCC"/>
+			<attrib name="itemdisabledbkcolor" alias="禁用背景颜色" type="Color" default="#FFFFFFFF"/>
+			<attrib name="itemdisabledimage" alias="禁用背景图片" type="Image" default=""/>
+			<attrib name="itemshowhtml" alias="使用富文本" type="CheckBox" default="false"/>
+		</control>
+		<control name="ListContainerElement" classname="ListContainerElementUI" image="file='Controls/ListContainerElement.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="selected" alias="选中" type="CheckBox" default="false"/>
+		</control>
+		<control name="ListHeader" classname="ListHeaderUI" image="file='Controls/ListHeader.png' dest='3,3,17,17'" parent="HorizontalLayout" enable="true"/>
+		<control name="ListHeaderItem" classname="ListHeaderItemUI" image="file='Controls/ListHeaderItem.png' dest='3,3,17,17'" parent="Control" enable="true">
+			<attrib name="minwidth" alias="最小宽度" type="Edit" default="16"/>
+			<attrib name="dragable" alias="允许拖动" type="CheckBox" default="true"/>
+			<attrib name="sepwidth" alias="分隔线宽度" type="Edit" default="4"/>
+			<attrib name="align" alias="对齐" type="Edit" default="center"/>
+			<attrib name="endellipsis" alias="endellipsis" type="CheckBox" default="false"/>
+			<attrib name="font" alias="字体" type="Font" default="-1"/>
+			<attrib name="textcolor" alias="文字颜色" type="Color" default="#FF000000"/>
+			<attrib name="textpadding" alias="文字外边距" type="Rect" default="2,0,2,0"/>
+			<attrib name="showhtml" alias="使用富文本" type="CheckBox" default="false"/>
+			<attrib name="normalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="hotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="pushedimage" alias="按下图片" type="Image" default=""/>
+			<attrib name="focusedimage" alias="焦点图片" type="Image" default=""/>
+			<attrib name="sepimage" alias="拖动条图片" type="Image" default=""/>
+		</control>
+		<control name="ListLabelElement" classname="ListLabelElementUI" image="file='Controls/ListLabelElement.png' dest='3,3,17,17'" parent="Control" enable="true">
+			<attrib name="selected" alias="选中" type="CheckBox" default="false"/>
+		</control>
+		<control name="ListTextElement" classname="ListTextElementUI" image="file='Controls/text.png' dest='3,3,17,17'" parent="ListLabelElement" enable="true"/>
+		<control name="Option" classname="OptionUI" image="file='Controls/Option.png' dest='3,3,17,17'" parent="Button" enable="true">
+			<attrib name="group" alias="组名" type="Edit" default=""/>
+			<attrib name="selected" alias="选中" type="CheckBox" default="false"/>
+			<attrib name="selectedimage" alias="选中图片" type="Image" default=""/>
+			<attrib name="selectedhotimage" alias="选中悬浮图片" type="Image" default=""/>
+			<attrib name="foreimage" alias="前景图片" type="Image" default=""/>
+			<attrib name="selectedbkcolor" alias="选中背景颜色" type="Color" default="#00000000"/>
+			<attrib name="selectedtextcolor" alias="选中文字颜色" type="Color" default="#FF000000"/>
+		</control>
+		<control name="Progress" classname="ProgressUI" image="file='Controls/Progress.png' dest='3,3,17,17'" parent="Label" enable="true">
+			<attrib name="pos" alias="位置" type="Pos" default="0,0,0,12"/>
+			<attrib name="align" alias="水平对齐" type="Edit" default="center"/>
+			<attrib name="valign" alias="垂直对齐" type="Edit" default=""/>
+			<attrib name="hor" alias="水平" type="CheckBox" default="true"/>
+			<attrib name="min" alias="最小值" type="Edit" default="0"/>
+			<attrib name="max" alias="最大值" type="Edit" default="100"/>
+			<attrib name="value" alias="当前值" type="Edit" default="0"/>
+			<attrib name="foreimage" alias="前景图片" type="Image" default=""/>
+			<attrib name="isstretchfore" alias="前景是否缩放" type="CheckBox" default="true"/>
+		</control>
+		<control name="RichEdit" classname="RichEditUI" image="file='Controls/RichEdit.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="font" alias="字体" type="Font" default="-1"/>
+			<attrib name="align" alias="对齐" type="Edit" default=""/>
+			<attrib name="textcolor" alias="文字颜色" type="Color" default="#00000000"/>
+			<attrib name="vscrollbar" alias="垂直滚动条" type="CheckBox" default="false"/>
+			<attrib name="autovscroll" alias="自动垂直滚动" type="CheckBox" default="false"/>
+			<attrib name="hscrollbar" alias="水平滚动条" type="CheckBox" default="false"/>
+			<attrib name="autohscroll" alias="自动水平滚动" type="CheckBox" default="false"/>
+			<attrib name="wanttab" alias="Tab" type="CheckBox" default="true"/>
+			<attrib name="wantreturn" alias="Return" type="CheckBox" default="true"/>
+			<attrib name="wantctrlreturn" alias="CtrlReturn" type="CheckBox" default="true"/>
+			<attrib name="rich" alias="Rich" type="CheckBox" default="true"/>
+			<attrib name="multiline" alias="使用多行" type="CheckBox" default="true"/>
+			<attrib name="readonly" alias="只读" type="CheckBox" default="false"/>
+			<attrib name="password" alias="密码" type="CheckBox" default="false"/>
+		</control>
+		<control name="ScrollBar" classname="ScrollBarUI" image="" parent="Control" enable="false">
+			<attrib name="" alias="按钮1" type="Line" default=""/>
+			<attrib name="button1color" alias="背景颜色" type="Color" default="#00000000"/>
+			<attrib name="button1normalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="button1hotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="button1pushedimage" alias="按下图片" type="Font" default=""/>
+			<attrib name="button1disabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="" alias="按钮2" type="Line" default=""/>
+			<attrib name="button2color" alias="背景颜色" type="Color" default="#00000000"/>
+			<attrib name="button2normalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="button2hotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="button2pushedimage" alias="按下图片" type="Image" default=""/>
+			<attrib name="button2disabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="" alias="滑块" type="Line" default=""/>
+			<attrib name="thumbcolor" alias="背景颜色" type="Color" default="#00000000"/>
+			<attrib name="thumbnormalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="thumbhotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="thumbpushedimage" alias="按下图片" type="Image" default=""/>
+			<attrib name="thumbdisabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="" alias="轨道" type="Line" default=""/>
+			<attrib name="railnormalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="railhotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="railpushedimage" alias="按下图片" type="Image" default=""/>
+			<attrib name="raildisabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="" alias="背景" type="Line" default=""/>
+			<attrib name="bknormalimage" alias="普通图片" type="Image" default=""/>
+			<attrib name="bkhotimage" alias="悬浮图片" type="Image" default=""/>
+			<attrib name="bkpushedimage" alias="按下图片" type="Image" default=""/>
+			<attrib name="bkdisabledimage" alias="禁用图片" type="Image" default=""/>
+			<attrib name="showbutton1" alias="显示按钮1" type="CheckBox" default="true"/>
+			<attrib name="showbutton2" alias="显示按钮2" type="CheckBox" default="true"/>
+		</control>
+		<control name="Slider" classname="SliderUI" image="file='Controls/Slider.png' dest='3,3,17,17'" parent="Progress" enable="true">
+			<attrib name="thumbimage" alias="滑块图片" type="Image" default=""/>
+			<attrib name="thumbhotimage" alias="悬浮滑块图片" type="Image" default=""/>
+			<attrib name="thumbpushedimage" alias="按下滑块图片" type="Image" default=""/>
+			<attrib name="thumbsize" alias="滑块大小" type="Size" default="10,10"/>
+			<attrib name="step" alias="进度步长" type="Edit" default="1"/>
+		</control>
+		<control name="TabLayout" classname="TabLayoutUI" image="file='Controls/TabLayout.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="selectedid" alias="当前选择" type="Edit" default="-1"/>
+		</control>
+		<control name="Text" classname="TextUI" image="file='Controls/Text.png' dest='3,3,17,17'" parent="Label" enable="true">
+			<attrib name="align" alias="水平对齐" type="Edit" default=""/>
+			<attrib name="valign" alias="垂直对齐" type="Edit" default=""/>
+			<attrib name="textcolor" alias="文本颜色" type="Color" default="#00000000"/>
+			<attrib name="disabledtextcolor" alias="禁用文本颜色" type="Color" default="#00000000"/>
+			<attrib name="textpadding" alias="文字外边距" type="Rect" default="2,0,2,0"/>
+		</control>
+		<control name="TileLayout" classname="TileLayoutUI" image="file='Controls/TileLayout.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="itemsize" alias="子项大小" type="Size" default="0,0"/>
+			<attrib name="columns" alias="列数" type="Edit" default="1"/>
+		</control>
+		<control name="TreeNode" classname="TreeNodeUI" image="file='Controls/TreeNode.png' dest='3,3,17,17'" parent="ListContainerElement" enable="true">
+			<attrib name="pos" alias="位置" type="Pos" default="0,0,250,18"/>
+			<attrib name="itemtextcolor" alias="文字颜色" type="Color" default=""/>
+			<attrib name="itemhottextcolor" alias="悬浮文字颜色" type="Color" default=""/>
+			<attrib name="selitemtextcolor" alias="选中文字颜色" type="Color" default=""/>
+			<attrib name="selitemhottextcolor" alias="选中悬浮颜色" type="Color" default=""/>
+		</control>
+		<control name="TreeView" classname="TreeViewUI" image="file='Controls/TreeView.png' dest='3,3,17,17'" parent="List" enable="true">
+			<attrib name="header" alias="显示表头" type="CheckBox" default="false"/>
+			<attrib name="visiblefolderbtn" alias="显示收缩按钮" type="CheckBox" default="true"/>
+			<attrib name="visiblecheckbtn" alias="显示复选框" type="CheckBox" default="false"/>
+			<attrib name="itemminwidth" alias="子项最小宽度" type="Edit" default="0"/>
+		</control>
+		<control name="VerticalLayout" classname="VerticalLayoutUI" image="file='Controls/VerticalLayout.png' dest='3,3,17,17'" parent="Container" enable="true">
+			<attrib name="sepheight" alias="分隔符高" type="Edit" default="0"/>
+			<attrib name="sepimm" alias="使用分隔符" type="CheckBox" default="false"/>
+		</control>
+		<control name="WebBrowser" classname="WebBrowserUI" image="file='Controls/WebBrowser.png' dest='3,3,17,17'" parent="ActiveX" enable="true">
+			<attrib name="homepage" alias="主页" type="Edit" default=""/>
+			<attrib name="autonavi" alias="自动加载" type="CheckBox" default="false"/>
+		</control>
+		<control name="Window" classname="Window" image="" parent="" enable="false">
+			<attrib name="resousepath" alias="资源路径" type="Folder" default=""/>
+			<attrib name="size" alias="大小" type="Size" default="0,0"/>
+			<attrib name="sizebox" alias="窗口边框" type="Rect" default="0,0,0,0"/>
+			<attrib name="caption" alias="标题栏" type="Rect" default="0,0,0,0"/>
+			<attrib name="roundcorner" alias="圆角大小" type="Size" default="0,0"/>
+			<attrib name="mininfo" alias="最小尺寸" type="Size" default="0,0"/>
+			<attrib name="maxinfo" alias="最大尺寸" type="Size" default="9999,9999"/>
+			<attrib name="disabledfontcolor" alias="禁用文字颜色" type="Color" default="#FFA7A6AA"/>
+			<attrib name="defaultfontcolor" alias="默认文字颜色" type="Color" default="#FF000000"/>
+			<attrib name="linkfontcolor" alias="链接文字颜色" type="Color" default="#FF0000FF"/>
+			<attrib name="linkhoverfontcolor" alias="链接悬浮颜色" type="Color" default="#FFD3215F"/>
+			<attrib name="selectedcolor" alias="链接点击颜色" type="Color" default="#FFBAE4FF"/>
+			<attrib name="showdirty" alias="显示脏矩形" type="CheckBox" default="false"/>
+			<attrib name="opacity" alias="透明度" type="Edit" default="255"/>
+			<attrib name="layeredopacity" alias="异形透明度" type="Edit" default="255"/>
+			<attrib name="layeredimage" alias="异形背景图" type="Image" default=""/>
+		</control>
+	</controls>
+</root>
+

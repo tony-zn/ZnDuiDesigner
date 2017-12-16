@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window >
+  <AutoWidthHLayout minwidth="50" height="20">
+    <AutoWidthOption name="wnds.title.h.item.option" group="wnds.title.h.item.option" minwidth="10" textpadding="5,0,33" align="left" valign="bottom" textcolor="#FFCCCCCC" hotimage="DuiDesigner/gray.png" selectedimage="DuiDesigner/blue.png" />
+    <HorizontalLayout float="0,0,1,1" mouse="false" name="wnds.title.h.item.editflag" visible="false"  >
+      <Control mouse="false"/>
+      <Label text="*" mouse="false" width="10" align="center" valign="bottom" textcolor="#FFCCCCCC" />
+      <Control width="23" mouse="false"/>
+    </HorizontalLayout>
+    <HorizontalLayout name="wnds.title.h.item.manager" float="0,0,1,1" mouse="false" visible="false" >
+      <Control mouse="false"/>
+      <Button name="wnds.title.h.item.manager.del.btn" width="18" height="18" padding="0,2" bkimage="file='DuiDesigner/WndBtn.png' source='76,4,94,22'" hotimage="DuiDesigner/white_tras.png" pushedimage="DuiDesigner/black_tras.png" />
+      <Control width="5" mouse="false"/>
+    </HorizontalLayout>
+  </AutoWidthHLayout>
+</Window>
